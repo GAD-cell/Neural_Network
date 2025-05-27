@@ -59,19 +59,6 @@ model = NeuralNetwork.load_model('trained_model.pkl')
 prediction = model.predict(input_data)
 ```
 
-### Preprocessing Images
-
-The `preprocessing.py` module provides utilities for preprocessing images:
-
-```python
-from src.preprocessing import circle_crop, process_training_images
-
-# Process a single image
-processed_image = circle_crop('path/to/image.jpg')
-
-# Process and save a batch of training images
-process_training_images(data_dir='path/to/images')
-```
 
 ## Customization
 
